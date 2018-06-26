@@ -1,0 +1,8 @@
+{% extends 'analy/index.html' %}
+{% block body %}
+
+    {{ time }}<br>
+    {% for g in temp %}
+    {{ g.temp }}
+    {% endfor %}
+{% endblock %}

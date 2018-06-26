@@ -1,0 +1,76 @@
+{% extends "analy/index.html" %}
+{% load static %}
+  {% block body %}<center><br><br><br>
+<div>
+  <h2>What is temperature?</h2><h3>
+  Temperature is a degree of hotness or coldness the can be measured using a thermometer.
+  It's also a measure of how fast the atoms and molecules of a substance are moving.
+  Temperature is measured in degrees on the Fahrenheit, Celsius, and Kelvin scales.</h3></pre></p></div>
+    <br>
+    <h2>Why we care about wind apeed?</h2><h3>
+ The role of atmospheric turbulence in influencing wind-turbine power production remains an unsolved mystery despite a growing number of researchers who have attempted to make sense of this issue.
+        Turbulence, a term for short-term deviations around the average wind speed, can cause fluctuations in turbine power production and structural loads.
+        While research strongly suggests that ignoring atmospheric turbulence can result in significant errors in power-curve measurements and annual energy production, it appears that there may be no universal relationship between turbulence and power production.</h3></pre></p></div>
+
+
+</center>
+
+<div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="anat" target="_blank">
+          <img src="{%static '/images/anna.jpg'%}" alt="Nature" width="300" height="173">
+          <div class="caption"><input type="button" class="btn btn-success btn-lg" value="Temperature" onclick="window.location.href='anat'" />
+
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="anaw" target="_blank">
+          <img src="{%static '/images/anna.jpg'%}" alt="Fjords" width="300" height="173">
+            <div class="caption"><input type="button" value="Wind" class="btn btn-success btn-lg" onclick="window.location.href='anaw'" />
+
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+<br><br><br>
+<div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="anap" target="_blank">
+          <img src="{%static '/images/anna.jpg'%}" alt="Nature" width="300" height="173">
+          <div class="caption"><input type="button" class="btn btn-success btn-lg" value="Pressure" onclick="window.location.href='anap'" />
+
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="anah" target="_blank">
+          <img src="{%static '/images/anna.jpg'%}" alt="Fjords" width="300" height="173">
+            <div class="caption"><input type="button" value="Humidity" class="btn btn-success btn-lg" onclick="window.location.href='anah'" />
+
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock body %}
+form.html

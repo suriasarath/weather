@@ -1,0 +1,36 @@
+{% extends "analy/index.html" %}
+{% load static %}
+  {% block body %}<center><br><br><br>
+    <h1>+ Create your Account </h1>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-8">
+      <form method="post" class="form-signin"style="background-color: #92a8d1; border: 1px solid black;">
+     {% csrf_token %}
+    <li><table cellpadding={{ pad }}>
+    {% for forms in form %}
+        <ul><tr><td><h2><i>{{forms.label}}</i></h2></td> <td>{{ forms }}</td></tr></ul>
+        {% endfor %}
+        <tr><td></td><td><input type="submit" value ={{ val }} name={{ nam }} class="btn btn-success btn-lg" ></td></tr>
+    </li>
+
+
+</table>
+          {% if new %}
+<a href='signup'><h3>New Member...? </h3></a>
+{% endif %}
+</form></center>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock body %}
+
